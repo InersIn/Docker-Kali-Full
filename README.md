@@ -15,7 +15,7 @@ ssh root@0.0.0.0 -p <port ssh>
 Port ssh is the port that you specified in Dockerfile, and the creds is "root:root".
 
 # Install Kali Full
-Because i just want using CLI without GUI, then i just install "kali-linux-headless". If you want to installed with GUI, install "kali-linux-large".
+Install "kali-linux-headless".
 ```bash
 apt-get install kali-linux-headless -y
 ```
