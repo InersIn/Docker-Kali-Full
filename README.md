@@ -4,6 +4,7 @@ Setup Kali Full in Docker
 # Run
 ```bash
 docker build . -t <tag name>
+docker run -d --net=host -v /root/box:/root/box --name box box:latest
 ```
 
 # Connect SSH
@@ -24,3 +25,5 @@ You need to change the password of root by using below command.
 ```bash
 passwd
 ```
+# Disclaimer
+Because the docker is using network host (--net=host) on run, you need to becarefull because if you open or listen port on your docker it will open the port on host network!.
